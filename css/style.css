@@ -592,6 +592,46 @@ button {
     float: left;
 }
 
+.form_section {
+    padding: 60px 0;
+    background: url('../images/form-bg.png'); /* Usa el fondo que prefieras */
+    background-size: cover;
+}
+
+.form_taital {
+    text-align: center;
+    color: #111111;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #4bc5b8;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #39a0a4;
+}
+
 .box_main {
     width: 100%;
     float: left;
