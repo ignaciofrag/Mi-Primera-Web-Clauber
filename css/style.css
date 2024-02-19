@@ -592,6 +592,13 @@ button {
     float: left;
 }
 
+.news_section_2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Esto asegurará que todos los elementos de la fila tengan la misma altura */
+}
+
+
 .form_section {
     padding: 60px 0;
     background: url('../images/form-bg.png'); /* Usa el fondo que prefieras */
@@ -633,21 +640,41 @@ button {
 }
 
 .box_main {
-    width: 100%;
-    float: left;
+    padding: 40px; /* o cualquier otro valor que sea común a todos los elementos */
+    border-radius: 15px;
     background-color: #252525;
     height: auto;
-    border-radius: 15px;
-    padding: 40px;
     text-align: center;
 }
 
+.box_main .icon_1 img {
+    width: auto; /* Esto permitirá que la imagen utilice su tamaño original hasta el máximo establecido por el contenedor */
+    max-width: 100px; /* o el tamaño máximo que prefieras */
+}
+.box_main .daily_text,
+.box_main .daily_text_1 {
+    font-size: 24px; /* Asegúrate de que el tamaño de la fuente sea el mismo para ambos */
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0 auto; /* Centra el texto si es necesario */
+    /* Agrega cualquier otro estilo que sea común a todos los títulos */
+}.box_main:hover, 
+.box_main.active {
+    background-color: #1becde; /* o cualquier otro color o estilo que desees aplicar */
+}
 .box_main:hover {
     background-color: #1becde;
 }
 
 .box_main.active {
     background-color: #1becde;
+}
+
+.box_main_special .icon_1 img {
+    max-width: 80%; /* o el porcentaje que mejor se ajuste */
+    margin: auto;
+    margin-top: -20px; /* Centra la imagen si es necesario */
 }
 
 .icon_1 {
@@ -675,15 +702,12 @@ button {
 }
 
 .daily_text_1 {
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
+    width: auto; /* Ajusta la anchura según sea necesario, o usa auto para contenido automático */
+    margin: 0 auto; /* Centra el texto */
     font-weight: bold;
     font-size: 24px;
-    display: block;
     color: #fff;
     line-height: 30px;
-    padding-bottom: 40px;
 }
 
 .getquote_bt {
